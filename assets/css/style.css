@@ -1,0 +1,23 @@
+
+body{
+        background-image:url(../images/background.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-opacity: 0.2; 
+        background-filter: alpha(opacity=20);
+        color: black;
+    }
+
+.sidebar{color: #ffffff;}
+
+#clock{
+font-size: 80px;
+}
+
+#next{
+	width: 40%;
+    position: relative;
+    left: 30%;
+
+}

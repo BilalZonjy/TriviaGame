@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trivia</title>
+    	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/opening.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/results.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/correct_wrong.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
+</head>
+<body>
+<!-- opening modal -->
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false" style="display: none;" >
+        <div class="modal-dialog">
+        <div class="loginmodal-container">
+          <h1>Enter your name</h1><br>
+          <form id="nameform">
+          <input type="text" name="user" placeholder="John Smith">
+          </form>
+          <button class="btn btn-success btn-lg letsGobtn " id="letsGobtn"><span class="glyphicon glyphicon-ok-sign"></span> Let's Go</button>
+        </div>
+      </div>
+      </div>
+<!-- end of opening modal -->
+<!-- start of main page -->
+    <div class="container during_game">
+      <div class="header clearfix">
+       <h1  id='player_name_main' style="color: #ffffff"></h1>
+      </div>
+      <div class="container">
+      <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-6">
+      
+      		<div class="jumbotron">
+			        <div class="Question">
+			</div>
+			<hr>
+			<form>
+			  <div>
+			    <input type="radio" class="options" name="chooses" value="1" id="option_1">
+			    <label id="choice_1" for="1"></label>
+			  </div>
+			  <div>
+			    <input type="radio" class="options" name="chooses" value="2" id="option_2">
+			    <label id="choice_2" for="2"></label>
+			  </div>
+			  <div>
+			    <input type="radio" class="options" name="chooses" value="3" id="option_3">
+			    <label id="choice_3" for="3"></label>
+			  </div>
+			  <div>
+			    <input type="radio" class="options" name="chooses" value="4" id="option_4">
+			    <label id="choice_4" for="3"></label>
+			  </div>
+			  
+			</form>
+			<hr>
+			<button class="btn btn-success btn-lg" id="next"> Check<span class="glyphicon glyphicon-chevron-right"></span></button>
+
+      </div>
+      </div>
+      <!-- End of main col -->
+      <div class="col-sm-1"></div>
+      <div class="col-sm-2">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper" >
+            <nav id="spy">
+                <ul class="sidebar-nav nav sidebar during_game"   >
+                    <h3>Time left</h3>
+                    <h1 id="clock"></h1>
+                </ul>
+            </nav>
+        </div> <!-- End of sidebar -->
+        </div> <!-- End of sidebar col -->
+        </div>
+        </div>
+        </div>
+
+        <!-- End of row -->
+<!-- end of main page -->
+<!-- correct_wrong_modal -->
+
+<div class="modal fade" id="correct_wrong_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <h2 class="modal-title" id="correct_wrong_result"></h2>
+        <div class="result_summery" id="correct_wrong_correct_answer"></div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="close_correct_wrong_modal" data-dismiss="modal">  OK <span class="	glyphicon glyphicon-thumbs-up"></span></button>
+     </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- end of correct_wrong_modal -->
+<!-- finishing modal -->
+<div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">Results</h2>
+      </div>
+      <div class="modal-body">
+        <div class="result_summery" id="result_name">Player Name: <div class="result_summery" id="result_player_name"></div></div>
+        <div class="result_summery" id="result_unanswered_Q"></div>
+        <div class="result_summery" > Number of Right Answer <div id="result_right_answer"></div></div>
+        <div class="result_summery" > Number of wrong Answer <div id="result_wrong_answer"></div></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="close_state" data-dismiss="modal"><span class="glyphicon glyphicon-repeat"></span>  Close</button>
+     </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- end of finishing modal -->
+
+
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src= "assets/js/Qbank.js" ></script>
+	<script type="text/javascript" src= "assets/js/func.js" ></script>
+	<script type="text/javascript" src= "assets/js/timer.js" ></script>
+	<script type="text/javascript" src= "assets/js/app.js">	</script>
+
+
+</body>
+</html>

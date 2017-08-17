@@ -1,0 +1,41 @@
+#close_correct_wrong_modal{
+    position: relative;
+    right:  30%;
+    width: 40%;
+}
+#correct_wrong_modal{
+
+	font-size: 16px;
+	text-align: center;
+}
+
+
+#correct_wrong_result{
+	font-size: 40px;
+}
+#correct_wrong_correct_answer{
+	font-size: 24px;
+}
+/*#result_player_name{
+	font-size: 24px;
+}
+
+
+#result_unanswered_Q{
+
+font-size: 24px;
+margin: 20px;
+
+}
+
+#result_right_answer{
+
+	color: #298402;
+	font-size: 24px;
+}
+
+#result_wrong_answer{
+
+	color: #a30800;
+	font-size: 24px;
+}*/
